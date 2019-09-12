@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		ex3
+	</title>
+</head>
+<body>
+<script type="text/javascript">
+	var n1,n2,saldo,saque,vsaque,deposito,vdeposito
+	n1=parseInt(prompt("digite a senha"))
+	saldo = 0
+	 
+
+	if (n1=="121212") {
+		alert("bem vindo")
+	} 
+	else{
+		alert("goodbye")
+	}
+	n2= parseInt(prompt("escolha uma das operacoes.1 para sacar.2 para depositar.3 para ver seu saldo.e 0 para sair"))
+	switch(n2){
+		case(1):{
+			parseInt(prompt("digite o valor do saque"))
+			if (saldo!=0) {
+
+				alert("seu saldo é de "+saldo-vsaque+".")
+
+			}
+			else{
+				alert("saldo insuficiente")
+			}
+
+		}
+		case(2):{
+			parseInt(prompt("digite o valor do deposito"))
+			if (vdeposito>0) {
+				alert("nao pode haver deposito negativo")
+			
+			}
+else{
+				alert("seu saldo é de "+saldo+vdeposito)
+			}
+		}
+
+	}
+	
+</script>
+</body>
+</html>
