@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var vetor = []
+	var numero
+
+	do{
+	numero = parseInt(prompt("digitr um valor qualquer ou 0 para sair"))
+
+		if (numero!=0) {
+			vetor.push(numero)
+			}
+	}
+	while(numero!=0)
+</script>
+<h1>ordem digitada</h1>
+<table border="1">
+<script>
+for(var c=0;c<vetor.length;c++){
+	document.write("<tr><td>"+vetor[c]+"</tr></td>");
+}
+</script>
+</table>
+<h1>ordem inversa</h1>
+<table border="1">
+<script>
+for (c=vetor.length-1;c>=0;c--) {
+	document.write("<tr><td>"+vetor[c]+"</tr></td>");
+}
+</script>
+</table>
+</body>
+</html>
